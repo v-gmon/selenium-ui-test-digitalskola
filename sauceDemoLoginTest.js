@@ -27,7 +27,7 @@ async function sauceDemoLoginTest(){
         await addToCartButton.click();
         //Memastikan item berhasil ditambahkan ke cart
         let cartItem = await driver.findElement(By.xpath("//span[@class='shopping_cart_badge']"));
-        assert.strictEqual(await cartItem.getText(), '1', "Cart item is not 1");
+        assert.strictEqual(await cartItem.getText(), '1', "Cart item is 1");
         //console.log(await cartItem.getText());
                 
     } finally {
